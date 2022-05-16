@@ -1,4 +1,5 @@
 import React from 'react'
+import Middlenav from '../middlenav/middlenav'
 import "./Navbar.css"
 export const Navbar = () => {
   return (
@@ -7,9 +8,7 @@ export const Navbar = () => {
         <h5>LOGOBAKERY</h5>
       </div>
       <div className='FLEX'>
-        <p>Services</p>
-        <p>Projects</p>
-        <p>About</p>
+        <Middlenav/>
       </div>
      
       
