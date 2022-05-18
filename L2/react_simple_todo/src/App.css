@@ -1,0 +1,16 @@
+*{
+  width:100%;
+  background: rgb(218, 218, 218);
+}
+
+.App {
+  text-align: center;
+}
+
+svg{
+  position:fixed;
+  top:95vh;
+  left:98vh;
+
+}
+

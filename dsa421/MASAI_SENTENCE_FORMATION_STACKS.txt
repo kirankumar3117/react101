@@ -44,6 +44,27 @@ Also, there is no change in the case of characters present in the sentence.
 
 <======== SOLUTION ==========>
 
+//spce complexity is O(1)
+
+function find(str){
+     var j=str.length-1;
+   for(var i=0;i<Math.floor(str.length/2);i++){
+       [str[i],str[j]]=[str[j],str[i]]
+       j--
+   }
+   str=str.join(" ")
+   return str
+    
+ }
+
+//another way too easy but space complexity is O(n)
+
+
+
+
+
+
+
 function find(str){
     let stack=[];
     for(var i=str.length-1;i>=0;i--){
