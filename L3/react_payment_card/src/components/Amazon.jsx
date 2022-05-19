@@ -2,22 +2,29 @@ import React from 'react'
 import "./style.css"
 import {AiOutlineAmazon,AiOutlineArrowRight} from "react-icons/Ai"
 
-const Amazon = ({m,state,month}) => {
-    console.log(m,)
+const Amazon = ({result}) => {
+ 
+   
   return (
-    <div className='container'>
-        <div className='left'>
-            <p>{m[2]+"/"+month+"/"+m[3]}</p>
-            <button>Case Study</button>
-            <h1>Amazon Gift</h1>
-            <h1>Pay</h1>
-            <p>Desktop - Mobile</p>
-        </div>
-        <div className='right'>
-            <AiOutlineAmazon size="80px"/>
-            <AiOutlineArrowRight size="40"/>
-        </div>
+    <div>
+    {result.map(list=>(
+       <div className={list[9]}>
+       <div className={list[8]}>
+           <p>{list[7]}</p>
+           <button>Case Study</button>
+           <h1>{list[6]}</h1>
+           <h1>{list[5]}</h1>
+           <p>{list[4]}</p>
+       </div>
+       <div className={list[3]}>
+          {list[2]}
+          {list[1]}
+       </div>
+   </div>
+    ))}
     </div>
+   
+   
   )
 }
 

@@ -10,8 +10,8 @@ const Apple = ({m,state}) => {
         <p>{m[2]+" "+m[1]+" "+m[3]}</p>
         <button>Case Study</button>
         <h1>Apple Gift</h1>
-        <h1>Pay</h1>
-        <p>Desktop - Mobile</p>
+        <h1>Payment</h1>
+        <p>MacOS - Mobile</p>
     </div>
     <div className='right'>
          <AiFillApple size="80px"/>
