@@ -29,12 +29,13 @@ const Todo = () => {
 
   }
 
+
    
     
   return (
     <div className='maincontainer'>
         <Todo1 setList1={setList1} setList2={setList2} list1={list1} handleDelete={handleDelete} handleremove={handleremove}/>
-        <Todo2 setList2={setList2} list2={list2}/>
+        <Todo2 setList2={setList2} list2={list2} list1={list1} setList1={setList1}/>
     </div>
   )
 }
