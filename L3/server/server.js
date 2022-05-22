@@ -15,7 +15,7 @@ app.listen(PORT,async()=>{
     }catch(err){
         console.log({message:err.message})
     }
-    console.log("Listening on port NO:-",PORT)
+   
 });
 
 
