@@ -1,0 +1,27 @@
+.addTask {
+  /* Sample */
+  width:100%;
+  text-align: left;
+  /* justify-content: space-around; */
+ 
+}
+.addTask>input{
+  width:80%;
+  height:40px;
+  outline: none;
+  border: none;
+  color:rgb(92, 88, 88);
+  font-size:18px;
+  margin-left:2%;
+  
+}
+.addTask>button{
+  font-size: 33px;
+  font-weight: bold;
+  border: none;
+  background:transparent;
+  margin-left: 7%;
+  position: relative;
+  top:7px;
+}
+

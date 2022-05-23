@@ -1,0 +1,12 @@
+.counter {
+  width:30%;
+}
+.counter>button{
+  background: rgb(103, 103, 216);
+  border:none;
+  width:30px;
+  height:30px;
+  margin-top:5%;
+  margin-left: 2%;
+  font-weight: bold;
+}

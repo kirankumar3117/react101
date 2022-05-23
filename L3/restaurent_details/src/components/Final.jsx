@@ -38,7 +38,8 @@ const Final = ({fooddata,setFooddata}) => {
 
 
   return (
-    <section className="near-you">
+   <div>
+       <section className="near-you">
         <div className="container restaurants">
             <h1>{fooddata.length} restaurants</h1>
             <div className="restaurant-options">
@@ -91,7 +92,8 @@ const Final = ({fooddata,setFooddata}) => {
                
             </div>
         </div>
-    </section>
+    </section> 
+   </div>
   )
 }
 

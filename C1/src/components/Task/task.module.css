@@ -1,0 +1,60 @@
+.task {
+  width:98%;
+  /* border:1px solid red; */
+  margin-top:2.5%;
+  height:45px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.task>div{
+  display: flex;
+  
+}
+.toggle{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border: none;
+  border:8px solid rgb(54, 54, 161);
+  margin-left:1%;
+  margin-top:0.5%;
+}
+.toggle1{
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border: none;
+  border:8px solid rgb(61, 199, 114);
+  margin-left:1%;
+  margin-top:0.5%;
+}
+.text{
+  width:50%;
+  text-align:left;
+  /* border:1px solid blue; */
+  margin-left: 1%;
+  line-height: 45px;
+  /* text-decoration: line-through; */
+  font-size: 18px;
+  
+}
+.text1{
+  width:50%;
+  text-align:left;
+  /* border:1px solid blue; */
+  margin-left: 1%;
+  line-height: 35px;
+  text-decoration: line-through;
+  font-size: 18px;
+  
+}
+.remove{
+  border:none;
+  background: none;
+  color:black;
+  font-weight: bold;
+  font-size:55px;
+  margin-top:-3.5%;
+  margin-left: -1%;
+}
+
