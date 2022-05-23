@@ -2,13 +2,17 @@ import React, { useEffect, useState } from "react";
 import styles from "./taskHeader.module.css";
 
 
-const TaskHeader = () => {
+const TaskHeader = ({data,setData}) => {
   // sample values to be replaced
   
+  var count=0;
+
+  data.filter(e=>{
+    return e.done!==true ? count=count+1 : null;
+  })
   
-  
-  let totalTask=5;
-  let unCompletedTask=3;
+  let totalTask=data.length;
+  let unCompletedTask=count;
 
  
 

@@ -13,17 +13,14 @@ const TaskApp = () => {
 
   let [data,setData]=useState([])
  
-useEffect(()=>{
-    setData([...jsondata])
-},[])
-  
+
   
 
 
   return (
     <div data-cy="task-app" className={styles.taskApp}>
     
-     <TaskHeader/>
+     <TaskHeader data={data} setData={setData}/>
      <AddTask setData={setData} data={data}/>
       <Tasks setData={setData} data={data}/>
     </div>
