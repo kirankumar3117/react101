@@ -8,3 +8,15 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: white;
 }
+
+@media screen and (max-width:1020px){
+  .taskApp{
+    width:80%;
+  }
+}
+
+@media screen and (max-width:420px){
+  .textApp{
+    width:97%;
+  }
+}

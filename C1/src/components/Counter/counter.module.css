@@ -10,3 +10,9 @@
   margin-left: 2%;
   font-weight: bold;
 }
+
+@media screen and (max-width:420px){
+  .counter{
+    visibility: hidden;
+  }
+}

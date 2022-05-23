@@ -25,3 +25,8 @@
   top:7px;
 }
 
+@media screen and (max-width:420px){
+  .addTask>input{
+    width:75%;
+  }
+}

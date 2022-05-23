@@ -29,7 +29,7 @@ const AddTask = ({setData,data}) => {
         })
 
         {input.length > 0 && 
-       payload.inputstate==true ? data=[payload,...data] : alert("please write or "+`${input}`+" already exists")}
+       payload.inputstate==true ? data=[payload,...data] : alert("please write or "+`${input || "something"}`+" already exists")}
        setData([...data])
        setInput("") 
       
