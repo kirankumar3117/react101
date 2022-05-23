@@ -1,16 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Offers from './components/Offers'
 import data from "./components/data.json"
+import Final from './components/Final'
 
 
 function App() {
   const [count, setCount] = useState(0)
   var fooditems=["chinese","Tibeten","Pizzas","Snakes","Bhutanes","Beverages","Ice Cream","Backery"]
   data.items[1].food=["1","2"]
-  console.log(data.items[1])
+  
   const handlechange=(e)=>{
     var m=Math.floor(Math.random()*5) || 2
    
@@ -26,11 +27,24 @@ function App() {
     return handlechange(e)
   })
   var items=data.items;
-  console.log(items)
+ const [fooddata,setFooddata]=useState([])
+  useEffect(()=>{
+  fetch("https://foodlistlist.herokuapp.com/food")
+    .then((res)=>{
+      return res.json()
+    }).then((data)=>{
+     setFooddata(data)
+    })
+  },[])
+
+  
+
+
   return (
     <div className="App">
      <Navbar/>
      <Offers/>
+     <Final fooddata={fooddata} setFooddata={setFooddata}/>
     </div>
   )
 }

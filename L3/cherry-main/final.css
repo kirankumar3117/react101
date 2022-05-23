@@ -1,4 +1,13 @@
-
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.875;
+  margin: 0;
+  padding: 0;
+}
 
 .navbar {
   position: fixed;
@@ -59,7 +68,6 @@
   flex-direction: row-reverse;
   height: 100%;
   align-items: center;
-  
 }
 
 .navbar-option {
@@ -126,43 +134,7 @@
   color: #3d4152;
   font-size: 16px;
   font-weight: 300;
-  
 }
-.restaurant-option:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-.restaurant-option:hover:after{
-  width:100%;
-  background: black;;
-}
-
-
-.restaurant-option1{
-  align-items: center;
-  cursor: pointer;
-  margin-right: 60px;
-  color: #3d4152;
-  font-size: 16px;
-  font-weight: 300;
- 
-}
-.restaurant-option1:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 100%;
-  background: black;
-  
-}
-
-
 
 .divider {
   border-top: 1px solid #e9e9eb;
