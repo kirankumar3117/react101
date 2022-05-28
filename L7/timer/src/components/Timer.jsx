@@ -2,17 +2,18 @@ import React,{useEffect, useState} from 'react'
 
 const Timer = ({start,end}) => {
     const [timecount,setTimecount]=useState(start)
+    const [show,setShow]=useState(false)
    
     useEffect(()=>{
         let id=setInterval(()=>{
-            if(timecount == end+1){
+            if(timecount == end){
               
-                 
-                return ()=>{
-                    clearInterval(id)
+                setShow(!show)
+              
+                clearInterval(id) 
                    
                   
-                }
+               
                    
                    
             }
@@ -23,14 +24,14 @@ const Timer = ({start,end}) => {
         },1000)
         return ()=>{
             clearInterval(id)
-           
+            
           
         }
     },[timecount])
   return (
     <div>
         <h1 className='text-primary'>Timer</h1>
-        {timecount==end+1 ? <h2>{ "Done"}</h2> :<h2>{timecount}</h2>}
+        {show==true ? <h2>Done</h2> :<h2>{timecount}</h2>}
         
     </div>
   )
