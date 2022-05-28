@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+.left{
+  margin-left:0;
+  border:none;
+  font-size: 30px;
+  font-weight: bold;
+  background: transparent;
+}
+.right{
+  margin-left: 75%;
+  border:none;
+  font-size: 30px;
+  font-weight: bold;
+  background: transparent
+}

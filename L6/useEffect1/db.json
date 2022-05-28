@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "jumps",
+      "state": false
+    },
+    {
+      "id": 2,
+      "title": "pulls",
+      "state": false
+    },
+    {
+      "id": 3,
+      "title": "shifts",
+      "state": false
+    },
+    {
+      "id": 4,
+      "title": "Gones",
+      "state": false
+    },
+    {
+      "id": 5,
+      "title": "Reliabilities",
+      "state": false
+    },
+    {
+      "id": 6,
+      "title": "Optentins",
+      "state": false
+    },
+    {
+      "id": 7,
+      "title": "20min run",
+      "state": false
+    },
+    {
+      "id": 8,
+      "title": "walk",
+      "state": false
+    },
+    {
+      "title": "Dumble",
+      "state": false,
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
