@@ -1,0 +1,30 @@
+function findMinSum(arr, n){
+    if(!arr) return 
+    let min 
+    for (let i=0; i<arr.length; i++) {
+
+        /* if a number equals the sum, it's obviously
+         * the shortest set, just return it
+         */
+        if (arr[i] == n) return [arr[i]]     
+        
+        /* recursively call on subset with
+         * sum adjusted for removed element 
+         */
+        let next = findMinSum(arr.slice(i+1), n-arr[i])
+        
+        /* we only care about next if it's shorter then 
+         * the shortest thing we've seen so far
+         */
+        if (next){
+            if(min === undefined || next.length < min.length){
+                min = [arr[i], ...next]
+            }
+        }
+    }
+    return min && min  /* if we found a match return it, otherwise return undefined */
+}
+
+console.log(findMinSum([10, 0, -1, 20, 25, 30], 59).join(', '))
+console.log(findMinSum([10, 0, -1, 20, 25, 30], 29).join(', '))
+console.log(findMinSum([10, 0, -1, 20, 25, 30], -5)) // undefined when no sum
