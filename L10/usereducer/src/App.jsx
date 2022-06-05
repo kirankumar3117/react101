@@ -1,16 +1,19 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import Todo from './components/Todo'
 
 
 function App() {
  
 
-  fetch
+  
 
   return (
     <div className="App">
-    hllo
+   
+   <Todo/>
+
     </div>
   )
 }
