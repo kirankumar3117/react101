@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
 
 const [auth,setAuth]=useState(false)
 
-const login=({email,password})=>{
+const login=(email,password)=>{
  if(email && password){
    setAuth(true)
  }
@@ -20,5 +20,5 @@ const logout=()=>{
   setAuth(false)
 }
 
-  return <AuthContext.Provider value={{auth,setAuth}}>{children}</AuthContext.Provider>;
+  return <AuthContext.Provider value={{auth,setAuth,login,logout}}>{children}</AuthContext.Provider>;
 };
