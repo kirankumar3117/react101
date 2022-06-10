@@ -3,7 +3,7 @@ import styled from "./component.module.css"
 
 const Component = () => {
   return (
-    <div className={styled.component}>Component</div>
+    <div className={ styled.component}>Component</div>
   )
 }
 
