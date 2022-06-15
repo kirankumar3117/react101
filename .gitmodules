@@ -1,0 +1,6 @@
+[submodule "L17/lec/L17/lec/redux-start"]
+	path = L17/lec/L17/lec/redux-start
+	url = https://github.com/riteshf/redux-starter
+[submodule "redux-starter"]
+	path = redux-starter
+	url = https://github.com/riteshf/redux-starter
